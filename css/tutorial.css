@@ -1,0 +1,104 @@
+.tutorial-container {
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: calc(100vh - 70px); /* 70px is header height */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.tutorial-sidebar, .tutorial-content, .code-editor-container, .live-preview-container {
+    background-color: var(--mid-deep-blue);
+    padding: 1.5rem;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.tutorial-sidebar h2 {
+    color: var(--highlight-color);
+    margin-top: 0;
+}
+
+#tutorial-steps {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+#tutorial-steps li {
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#tutorial-steps li:hover {
+    background-color: #2a3f5a;
+}
+
+#tutorial-steps li.active {
+    background-color: var(--highlight-color);
+    color: var(--dark-deep-blue);
+    font-weight: 700;
+}
+
+#reset-button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--light-sky-blue);
+    color: var(--dark-deep-blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.tutorial-content h3 {
+    color: var(--highlight-color);
+}
+
+.tutorial-navigation {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tutorial-navigation button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.tutorial-navigation button:disabled {
+    background-color: #2a3f5a;
+    color: var(--light-sky-blue);
+    cursor: not-allowed;
+}
+
+.editor-header, .preview-header {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+#code-editor {
+    width: 100%;
+    height: calc(100% - 40px);
+    background-color: #0e2038;
+    border: none;
+    color: #a2b3d3;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+}
+
+#live-preview {
+    width: 100%;
+    height: calc(100% - 40px);
+    background-color: white;
+    border: none;
+}

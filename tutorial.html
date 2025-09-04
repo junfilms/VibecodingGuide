@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>튜토리얼: 나만의 프로필 페이지 만들기 | 바이브코딩</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tutorial.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" style="color: var(--highlight-color); text-decoration: none;">바이브코딩</a></div>
+            <ul>
+                <li><a href="index.html#about">소개</a></li>
+                <li><a href="index.html#features">특징</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tutorial-container">
+        <aside class="tutorial-sidebar">
+            <h2>튜토리얼 단계</h2>
+            <ul id="tutorial-steps">
+                <li class="active" data-step="1">1. HTML 기본 구조</li>
+                <li data-step="2">2. 자기소개 추가하기</li>
+                <li data-step="3">3. CSS로 스타일링하기</li>
+                <li data-step="4">4. 프로필 이미지 추가</li>
+                <li data-step="5">5. 링크 추가하기</li>
+            </ul>
+            <button id="reset-button">처음으로</button>
+        </aside>
+
+        <section class="tutorial-content">
+            <div id="step-content">
+                <h3>1. HTML 기본 구조</h3>
+                <p>모든 웹사이트는 HTML로 만들어집니다. 아래의 기본 구조를 코드 에디터에 입력하고, 실시간 미리보기에서 어떻게 보이는지 확인해보세요.</p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;내 프로필 페이지&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;안녕하세요!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+            <div class="tutorial-navigation">
+                <button id="prev-step" disabled>이전 단계</button>
+                <button id="next-step">다음 단계</button>
+            </div>
+        </section>
+
+        <section class="code-editor-container">
+            <div class="editor-header">HTML 에디터</div>
+            <textarea id="code-editor" spellcheck="false"></textarea>
+        </section>
+
+        <section class="live-preview-container">
+            <div class="preview-header">실시간 미리보기</div>
+            <iframe id="live-preview"></iframe>
+        </section>
+    </main>
+
+    <script src="js/tutorial.js"></script>
+</body>
+</html>

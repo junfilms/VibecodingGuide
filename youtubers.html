@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튜버와 함께 배우는 바이브코딩</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .youtuber-hero {
+            text-align: center;
+            padding: 2.5rem 1rem 0.5rem 1rem;
+        }
+        .youtuber-title {
+            font-size: 2.8rem;
+            color: #fff700;
+            margin-bottom: 3.5rem;
+            margin-top: 0.5rem;
+        }
+        .youtuber-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .youtuber-card {
+            background-color: var(--mid-deep-blue);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            padding: 2rem 2rem 1.5rem 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .youtuber-card:hover {
+            transform: translateY(-10px);
+        }
+        .youtuber-thumb {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            display: block;
+        }
+        .youtuber-name {
+            font-size: 1.3rem;
+            color: var(--highlight-color);
+            margin-bottom: 0.7rem;
+            font-weight: 700;
+        }
+        .youtuber-desc {
+            font-size: 1rem;
+            color: var(--white-color);
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 600px) {
+            .youtuber-title { font-size: 2rem; }
+            .youtuber-cards { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html" style="color: var(--highlight-color); text-decoration: none;">VibeCoding</a></div>
+        </nav>
+    </header>
+    <main>
+        <section class="youtuber-hero">
+            <h1 class="youtuber-title">유튜브로 배우는 바이브코딩</h1>
+            <div class="youtuber-cards">
+                <div class="youtuber-card">
+                    <a href="https://www.youtube.com/watch?v=MRu12ldUCUg&list=PLp_-lEFuMouaA5tr-RRXFwFQyqjKDW6FQ&index=15&t=2817s" target="_blank"><img src="https://i.ytimg.com/vi/MRu12ldUCUg/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDcIZXr6VMx0oDL6SJT76yS0-qo-w" class="youtuber-thumb"></a>
+                    <div class="youtuber-name">CONNECT AI LAB</div>
+                    <div class="youtuber-desc">비용 0원, 1시간 만에 AI로 '돈 버는 사업'을 만들었습니다</div>
+                </div>
+                <div class="youtuber-card">
+                    <a href="https://www.youtube.com/watch?v=6Ib1IeKXL6s&list=PLp_-lEFuMouaA5tr-RRXFwFQyqjKDW6FQ&index=4&t=994s" target="_blank"><img src="https://i.ytimg.com/vi/6Ib1IeKXL6s/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDwEhYIh9TOIJPdFF0jI7n4mrFg6g" class="youtuber-thumb"></a>
+                    <div class="youtuber-name">CONNECT AI LAB</div>
+                    <div class="youtuber-desc">구글이 만든 '무료' 제미나이 CLI, 성능은 그냥 미쳤습니다</div>
+                </div>
+                <div class="youtuber-card">
+                    <a href="https://www.youtube.com/watch?v=bFS8w9ETCaw&list=PLp_-lEFuMouaA5tr-RRXFwFQyqjKDW6FQ&index=1&t=824s" target="_blank"><img src="https://i.ytimg.com/vi/bFS8w9ETCaw/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD9nqca4q_UJNpfiW2UGn2Z9pHoog" class="youtuber-thumb"></a>
+                    <div class="youtuber-name">G-CREATOR</div>
+                    <div class="youtuber-desc">Gemini의 비밀 병기, 'Build apps with Gemini' ✨ 코딩 없이 '말로' 만드는 나만의 교실 앱, 30분 완성 가이드</div>
+                </div>
+                <div class="youtuber-card">
+                    <a href="https://example.com/youtuber1" target="_blank">
+                        <img src="https://i.ytimg.com/vi/IGIOpOc8kmI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD1D7Zr1p0bdngPEWf0lIJUBM3W_g" class="youtuber-thumb">
+                    </a>
+                    <div class="youtuber-name">퇴근후 딴짓</div>
+                    <div class="youtuber-desc">바이브 코딩 툴 4종 비교! VO vs REPLIT vs LOVABLE vs BOLT (feat. Google AI Studio)</div>
+                </div>
+                <div class="youtuber-card">
+                    <a href="https://www.youtube.com/watch?v=ollMbEOzofc&list=PLp_-lEFuMouaA5tr-RRXFwFQyqjKDW6FQ&index=12&t=106s
+                    " target="_blank">
+                        <img src="https://i.ytimg.com/vi/ollMbEOzofc/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAJVwva7YZO0r8kcmj4PS2Rwp42dw" class="youtuber-thumb">
+                    </a>
+                    <div class="youtuber-name">코딩 알려주는 누나</div>
+                    <div class="youtuber-desc">바이브코딩 전 알아야 할 필수 지식!</div>
+                </div>
