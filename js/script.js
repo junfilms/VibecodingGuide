@@ -66,3 +66,15 @@ sections.forEach(section => {
             window.location.href = 'tutorial.html';
         });
     }
+
+// Navigation toggle
+const navToggle = document.querySelector('.nav-toggle');
+const primaryNav = document.querySelector('#primary-navigation');
+const nav = document.querySelector('nav');
+
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        primaryNav.classList.toggle('nav-open');
+        nav.classList.toggle('nav-open');
+    });
+}
