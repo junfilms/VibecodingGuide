@@ -16,15 +16,53 @@
         .youtuber-title {
             font-size: 2.8rem;
             color: #fff700;
-            margin-bottom: 3.5rem;
+            margin-bottom: 1.75rem; /* 기존 3.5rem의 50% */
             margin-top: 0.5rem;
         }
+        .youtuber-title2 {
+            font-size: 28px;
+            color: #fff700;
+            padding-bottom: 1.5rem; /* 기존보다 두 배 크게 */
+        }
         .youtuber-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
             gap: 2rem;
+            padding-bottom: 1.5rem;
             max-width: 1100px;
             margin: 0 auto;
+            justify-content: center;
+        }
+        .youtuber-card {
+            width: 240px;
+            min-width: 240px;
+            max-width: 240px;
+            flex: 0 0 240px;
+        }
+        @media (max-width: 900px) {
+            .youtuber-cards {
+                gap: 1rem;
+            }
+            .youtuber-card {
+                width: 200px;
+                min-width: 200px;
+                max-width: 200px;
+                flex: 0 0 200px;
+            }
+        }
+        @media (max-width: 600px) {
+            .youtuber-cards {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: center;
+            }
+            .youtuber-card {
+                width: 90vw;
+                min-width: 90vw;
+                max-width: 90vw;
+                flex: 0 0 90vw;
+            }
         }
         .youtuber-card {
             background-color: var(--mid-deep-blue);
@@ -72,6 +110,8 @@
     <main>
         <section class="youtuber-hero">
             <h1 class="youtuber-title">유튜브로 배우는 바이브코딩</h1>
+             <hr style="border:0; border-top:2px solid #fff700; margin: 3rem auto 2.5rem auto; width:60%;">
+            <h2 class="youtuber-title2">1. 바이브코딩 맛보기</h2>
             <div class="youtuber-cards">
                 <div class="youtuber-card">
                     <a href="https://www.youtube.com/watch?v=MRu12ldUCUg&list=PLp_-lEFuMouaA5tr-RRXFwFQyqjKDW6FQ&index=15&t=2817s" target="_blank"><img src="https://i.ytimg.com/vi/MRu12ldUCUg/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDcIZXr6VMx0oDL6SJT76yS0-qo-w" class="youtuber-thumb"></a>
@@ -89,7 +129,7 @@
                     <div class="youtuber-desc">Gemini의 비밀 병기, 'Build apps with Gemini' ✨ 코딩 없이 '말로' 만드는 나만의 교실 앱, 30분 완성 가이드</div>
                 </div>
                 <div class="youtuber-card">
-                    <a href="https://example.com/youtuber1" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=IGIOpOc8kmI&list=PLp_-lEFuMouaA5tr-RRXFwFQyqjKDW6FQ&index=10&t=2s" target="_blank">
                         <img src="https://i.ytimg.com/vi/IGIOpOc8kmI/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD1D7Zr1p0bdngPEWf0lIJUBM3W_g" class="youtuber-thumb">
                     </a>
                     <div class="youtuber-name">퇴근후 딴짓</div>
@@ -103,3 +143,48 @@
                     <div class="youtuber-name">코딩 알려주는 누나</div>
                     <div class="youtuber-desc">바이브코딩 전 알아야 할 필수 지식!</div>
                 </div>
+            </div>
+        </section>
+        <hr style="border:0; border-top:2px solid #fff700; margin: 3rem auto 2.5rem auto; width:60%;">
+        <section class="youtuber-hero" style="background:rgba(255,255,255,0.03); border-radius:16px; padding-top:2.5rem; margin-bottom:2rem;">
+            <h2 class="youtuber-title2">2. 앱 제작 맛보기</h2>
+            <div class="youtuber-cards">
+                <div class="youtuber-card">
+                    <a href="https://www.youtube.com/watch?v=IFM1b_cjBSs&list=PLp_-lEFuMouZaPcDnxzCmSSFJg18fd8lG&index=9" target="_blank">
+                        <img src="https://i.ytimg.com/vi/IFM1b_cjBSs/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBYrIyjaffE1yd__-wmm-y7N9Bgcg" class="youtuber-thumb">
+                    </a>
+                    <div class="youtuber-name">아이티커넥트</div>
+                    <div class="youtuber-desc">Google Stitch로 무료로 앱디자인 하는 방법</div>
+                </div>
+                <div class="youtuber-card">
+                    <a href="https://www.youtube.com/watch?v=hv6UthBMa-k&list=PLp_-lEFuMouaA5tr-RRXFwFQyqjKDW6FQ&index=3&t=260s" target="_blank">
+                        <img src="https://i.ytimg.com/vi/hv6UthBMa-k/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBYM1kjzjEWD8I3vMPhe0QNgkT8MQ" class="youtuber-thumb">
+                    </a>
+                    <div class="youtuber-name">
+뎁프로 DevPro</div>
+                    <div class="youtuber-desc">FlutterFlow로 '음식사진 칼로리 분석 앱' 제작 배포 완전정복</div>
+                </div>
+                <div class="youtuber-card">
+                    <a href="https://www.youtube.com/watch?v=mh-wiUEIoN4&list=PLp_-lEFuMouaA5tr-RRXFwFQyqjKDW6FQ&index=2" target="_blank">
+                        <img src="https://i.ytimg.com/vi/mh-wiUEIoN4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAJ5UQaL_vMe5G2S_vUPieMWuPcaQ" class="youtuber-thumb">
+                    </a>
+                    <div class="youtuber-name">freAiner 프리에이아이너</div>
+                    <div class="youtuber-desc">Cursor ai로 쉽게 앱 개발하는 방법</div>
+                </div>
+                <div class="youtuber-card">
+                    <a href="https://www.youtube.com/watch?v=6Ib1IeKXL6s&list=PLp_-lEFuMouaA5tr-RRXFwFQyqjKDW6FQ&index=4&t=994s" target="_blank">
+                        <img src="https://i.ytimg.com/vi/3VJ9U2a25so/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBWI-kE4CGhjCEoheTf01FthYt8IQ" class="youtuber-thumb">
+                    </a>
+                    <div class="youtuber-name">CONNECT AI LAB</div>
+                    <div class="youtuber-desc">구글 오팔 Opal 의 미친 성능 (무료 AI 앱 생성기)</div>
+                </div>
+                <div class="youtuber-card">
+                    <a href="https://www.youtube.com/watch?v=FtZIZStw26g&t=285s" target="_blank">
+                        <img src="https://i.ytimg.com/vi/FtZIZStw26g/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD8hkLpxOUA2dr9y4SCtHX5ebuimA" class="youtuber-thumb">
+                    </a>
+                    <div class="youtuber-name">AI 오프너</div>
+                    <div class="youtuber-desc">nano banana 앱을 구글AI스튜디오에서 초보도 쉽게 만들어보자</div>
+                </div>
+            </div>
+        </section>
+ 
